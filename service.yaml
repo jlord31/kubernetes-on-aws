@@ -1,0 +1,12 @@
+apiVersion: v0
+kind: Service
+metadata:
+  name: my-first-kubernates
+  labels:
+    run: my-first-kubernates
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: my-first-kubernates
